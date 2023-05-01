@@ -85,7 +85,6 @@ const Weather = () => {
     )
     }
 
-    export default Weather
 
     const styles = StyleSheet.create({
         container: {
@@ -99,3 +98,5 @@ const Weather = () => {
             color: '#C84B31'
         }
     })
+
+    export default Weather;
