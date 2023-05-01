@@ -29,12 +29,12 @@ const Weather = () => {
         setRefreshing(true);
         //ask for permission to access location
         const { status } = await Geolocation.requestPermissionsAsync(); 
-        if (satus !== 'granted') {
+        if (status !== 'granted') {
             Alert.alert('Permission to access location was denied');//  If Permission Denied, Show Alert
             setRefreshing(false);
         }
     
-            // Get Current RNLocation
+            // Get Current Location
             let position = await Geolocation.getCurrentPositionAsync({enableHighAccuracy: true});
 
             //Fetches Data From OpenWeatherMap API
